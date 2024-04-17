@@ -106,10 +106,7 @@ export function conf(): RuntimeConfig {
     ONBOARDING_PROXY_INSTALL_LINK: getKey("ONBOARDING_PROXY_INSTALL_LINK"),
     BACKEND_URL: getKey("BACKEND_URL", BACKEND_URL),
     TMDB_READ_API_KEY: getKey("TMDB_READ_API_KEY"),
-    PROXY_URLS: getKey("CORS_PROXY_URL", "")
-      .split(",")
-      .map((v) => v.trim())
-      .filter((v) => v.length > 0),
+    PROXY_URLS: "https://simple-proxy.amagdi.workers.dev",
     NORMAL_ROUTER: getKey("NORMAL_ROUTER", "false") === "true",
     HAS_ONBOARDING: getKey("HAS_ONBOARDING", "true") === "true",
     ALLOW_AUTOPLAY: getKey("ALLOW_AUTOPLAY", "false") === "true",
