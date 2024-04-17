@@ -106,7 +106,7 @@ export function conf(): RuntimeConfig {
     ONBOARDING_PROXY_INSTALL_LINK: getKey("ONBOARDING_PROXY_INSTALL_LINK"),
     BACKEND_URL: getKey("BACKEND_URL", BACKEND_URL),
     TMDB_READ_API_KEY: getKey("TMDB_READ_API_KEY"),
-    PROXY_URLS: getKey("CORS_PROXY_URL", "")
+    PROXY_URLS: getKey("CORS_PROXY_URL", "https://simple-proxy.amagdi.workers.dev")
       .split(",")
       .map((v) => v.trim())
       .filter((v) => v.length > 0),
